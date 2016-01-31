@@ -1,10 +1,10 @@
 {
-  "name": "object-augmentor",
+  "name": "object-augmenter",
   "version": "0.0.1",
-  "description": "Merges two objects as trees (in depth) and augment properties of second object ",
+  "description": "Small utility to augment one JS object by another",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kalambet/object-augmentor"
+    "url": "https://github.com/kalambet/object-augmenter"
   },
   "main": "main.js",
   "scripts": {
@@ -23,6 +23,6 @@
     "mocha": "^2.4.5"
   },
   "bugs": {
-    "url": "https://github.com/kalambet/object-augmentor/issues"
+    "url": "https://github.com/kalambet/object-augmenter/issues"
   }
 }
