@@ -17,10 +17,12 @@ module.exports = function(base, perk) {
         typeof o == "string" ||
         typeof o == "boolean" ||
         typeof o === null ||
+        typeof o == "function" ||
         typeof n == "number" ||
         typeof n == "boolean" ||
         typeof n == "string" ||
-        typeof n === null) {
+        typeof n === null ||
+        typeof n == "function") {
       return n;
     }
 
