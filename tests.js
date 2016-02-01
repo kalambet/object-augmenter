@@ -28,3 +28,33 @@ describe('Comnplex merge', function() {
     assert.strictEqual(res.e, 7);
   });
 });
+
+describe('Check for augmenter "undefined" merge', function() {
+  it('should return {a: 1, b: "obj1", c: 1} with values are {a: 1, b: "obj1", c: 1} and undefined', function () {
+    var obj1 = {a: 1, b: "obj1", c: 1};
+    var res = augment(obj1, undefined);
+
+    assert.strictEqual(res.a, 1);
+    assert.strictEqual(res.b, "obj1");
+    assert.strictEqual(res.c, 1);
+  });
+});
+
+describe('Check for source "undefined" merge', function() {
+  it('should return {a: 2, b: "obj2", c:2} with values are undefined and {a: 2, b: "obj2", c:2}', function () {
+    var obj2 = {a: 2, b: "obj2", c:2};
+    var res = augment(undefined, obj2);
+
+    assert.strictEqual(res.a, 2);
+    assert.strictEqual(res.b, "obj2");
+    assert.strictEqual(res.c, 2);
+  });
+});
+
+describe('Check for both "undefined" merge', function() {
+  it('should return {a: 1, b: "obj1", c: 1}', function () {
+    var res = augment(undefined, undefined);
+
+    assert.strictEqual(res, undefined);
+  });
+});

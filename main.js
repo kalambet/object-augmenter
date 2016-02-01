@@ -4,6 +4,14 @@ module.exports = function(base, perk) {
   // n stands for `new`
   function merge(o, n) {
 
+    if(o === undefined && n === undefined) {
+      return undefined;
+    } else if (o === undefined) {
+      return n;
+    } else if (n === undefined) {
+      return o;
+    }
+
     // If at least one of them is a simple of function type, set the new value
     if(typeof o == "number" ||
         typeof o == "string" ||
