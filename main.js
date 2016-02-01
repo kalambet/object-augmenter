@@ -15,10 +15,12 @@ module.exports = function(base, perk) {
     // If at least one of them is a simple of function type, set the new value
     if(typeof o == "number" ||
         typeof o == "string" ||
-        typeof o == "function" ||
+        typeof o == "boolean" ||
+        typeof o === null ||
         typeof n == "number" ||
+        typeof n == "boolean" ||
         typeof n == "string" ||
-        typeof n == "function") {
+        typeof n === null) {
       return n;
     }
 
