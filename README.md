@@ -1,7 +1,7 @@
 # Object Augmenter [![Build Status](https://travis-ci.org/kalambet/object-augmenter.svg?branch=master)](https://travis-ci.org/kalambet/object-augmenter)
-###### Small utility to augment one JS object by another
+###### Small utility to augment one JS object with another
 
-The idea here that we are merging two JS objects like a trees (in depth). There are no special rules or arguments. The augmenter can contain only the fields that are needs to be updated.
+The idea here that we are merging two JS objects like a trees (in depth). There are no special rules or arguments. The augmenter can contain only the fields that are needs to be updated plus extrs ones if needed.
 
 ## Installation
 ```
@@ -10,7 +10,7 @@ npm install object-augmenter
 
 ## Usage
 ```
-var augment = rquire('object-augmenter');
+var augment = require('object-augmenter');
 
 var person = {
   name: {

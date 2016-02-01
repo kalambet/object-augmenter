@@ -1,7 +1,7 @@
 {
   "name": "object-augmenter",
   "version": "0.0.1",
-  "description": "Small utility to augment one JS object by another",
+  "description": "Small utility to augment one JS object with another",
   "repository": {
     "type": "git",
     "url": "https://github.com/kalambet/object-augmenter"
