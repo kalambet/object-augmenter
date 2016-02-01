@@ -1,6 +1,6 @@
 {
   "name": "object-augmenter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small utility to augment one JS object with another",
   "repository": {
     "type": "git",
